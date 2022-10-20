@@ -40,7 +40,7 @@ if tuner_name == 'Evolution':
 experiment.config.debug = True
 
 # Setting a name for the experiment
-experiment.config.experiment_name = f'Jinam/Saumil {tuner_name} {config_version}'
+experiment.config.experiment_name = f'Ninja Turtles {tuner_name} {config_version}'
 
 # Setting up number of trials to run -> Sets of hyperparameters and trial concurrency
 experiment.config.max_trial_number = 50  # Change to a higher number -> 50

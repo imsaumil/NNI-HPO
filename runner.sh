@@ -13,7 +13,7 @@ conda activate gpu
 # which python
 # nvcc --version
 
-cd /jet/home/jshah2/HW3/NNI_HPO
+cd /jet/home/jshah2/HW3/NNI_HyperParam_Optimization
 # nnictl view
 python3 main.py Evolution config_1
 python3 main.py Evolution config_2
