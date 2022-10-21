@@ -182,5 +182,5 @@ if __name__ == '__main__':
         print(f"Epoch {t + 1}\n-------------------------------")
         train()
         accuracy = test()
-        nni.report_intermediate_result(accuracy * 100.)
+        nni.report_intermediate_result(accuracy)
     nni.report_final_result(accuracy)
