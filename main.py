@@ -21,7 +21,7 @@ search_space = json.loads(data)
 experiment = Experiment('local')
 
 # Conducting NNI evaluation in trail mode
-experiment.config.trial_command = 'python model.py'
+experiment.config.trial_command = 'python3 model.py'
 experiment.config.trial_code_directory = '.'
 
 # Configuring the search space
@@ -39,7 +39,7 @@ if tuner_version == 'tuner_version_1':
 
     # Additional class argument required for Evolution tuner
     if tuner_name == 'Evolution':
-        experiment.config.tuner.class_args['population'] = 100
+        experiment.config.tuner.class_args['population_size'] = 100
 
 # Second config list approach
 elif tuner_version == 'tuner_version_2':
@@ -61,7 +61,7 @@ elif tuner_version == 'tuner_version_2':
     if tuner_name == 'Evolution':
         experiment.config.tuner.class_args = {
             'optimize_mode': 'maximize',
-            'population': 300
+            'population_size': 300
         }
 
     if tuner_name == 'SMAC':
