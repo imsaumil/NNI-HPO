@@ -15,9 +15,17 @@ conda activate gpu
 
 cd /jet/home/jshah2/HW3/NNI_HyperParam_Optimization
 # nnictl view
-python3 main.py Evolution config_1
-python3 main.py Evolution config_2
-python3 main.py TPE config_1
-python3 main.py TPE config_2
-python3 main.py SMAC config_1
-python3 main.py SMAC config_2
+python3 main.py Evolution config_1 tuner_version_1
+python3 main.py Evolution config_2 tuner_version_1
+python3 main.py TPE config_1 tuner_version_1
+python3 main.py TPE config_2 tuner_version_1
+python3 main.py SMAC config_1 tuner_version_1
+python3 main.py SMAC config_2 tuner_version_1
+
+
+python3 main.py Evolution config_1 tuner_version_2
+python3 main.py Evolution config_2 tuner_version_2
+python3 main.py TPE config_1 tuner_version_2
+python3 main.py TPE config_2 tuner_version_2
+python3 main.py SMAC config_1 tuner_version_2
+python3 main.py SMAC config_2 tuner_version_2

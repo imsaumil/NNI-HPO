@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     # Defining parameters to be tuned
     params = {
-        'dropout_rate': 0.1,
+        'dropout_rate': 0.0,
         'lr': 0.001,
         'momentum': 0,
         "batch_size": 64
