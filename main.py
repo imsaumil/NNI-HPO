@@ -67,7 +67,7 @@ elif tuner_version == 'tuner_version_2':
     if tuner_name == 'SMAC':
         experiment.config.tuner.class_args = {
             'optimize_mode': 'maximize',
-            'config_dedup ': True
+            'config_dedup': True
             }
 
 else:
