@@ -1,7 +1,8 @@
 # Hyper parameter tuning using NNI 
 ### Owners:
-* Jinam Shah
 * Saumil Shah
+* Jinam Shah
+
 
 ## Tuners Explored
 * TPE tuner
